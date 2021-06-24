@@ -51,9 +51,49 @@ public class EvaluacionWeb2 {
         System.out.println("la cantidad de numeros Negativos Ingresados son: "+con_nega);*/
         
         
-        //PUNTO 3 -- SUMA DE COLUMNA --
+        //PUNTO 3 -- MATRIZ, SUMA DE COLUMNA --
+
+        int matriz [][], num_filas, num_col, sumaCol;
         
-      
+         System.out.print("                          ---Bienvenido---                   ");
+        System.out.println("\n");
+        
+        System.out.print("Digite el número de filas: ");
+        num_filas = leer.nextInt();
+        
+        System.out.print("Digite el número de columnas: ");
+        num_col = leer.nextInt();
+        
+        matriz = new int [num_filas][num_col];
+        
+        System.out.print("Digite la matriz");
+        
+        for (int i=0; i<num_filas; i++){
+            for (int j=0; j<num_col; j++){
+                System.out.print("Matriz["+j+"]["+i+"] : ");
+                matriz[i][j] = leer.nextInt();
+            }
+        }
+        
+        System.out.println("\nLa matriz es: ");
+        for (int i=0; i<num_filas; i++){
+            for (int j=0; j<num_col; j++){
+                System.out.print(matriz[i][j]+" ");
+            }
+            System.out.println("");
+        }
+        
+       
+         for (int j=0; j<num_col; j++){
+             sumaCol= 0;
+                for (int i=0; i<num_col; i++){
+                sumaCol += matriz[i][j];  
+        
+                 
+         } 
+                System.out.println("\nLa suma de la columna["+j+"] es: "+ sumaCol);
+                System.out.println("");
+         }
         
         
     }
