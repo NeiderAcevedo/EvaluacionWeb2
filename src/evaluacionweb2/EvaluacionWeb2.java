@@ -91,8 +91,8 @@ public class EvaluacionWeb2 {
         
                  
          } 
-                System.out.println("\nLa suma de la columna["+j+"] es: "+ sumaCol);
-                System.out.println("");
+                System.out.println("La suma de la columna["+j+"] es: "+ sumaCol);
+                
          }
         
         
